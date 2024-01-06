@@ -1,12 +1,9 @@
 <?php
 
-$sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 function binarySearch($haystack,$needle): int
 {
     $high = count($haystack)-1;
     $low = 0;
-
 
     while ($low <= $high){
         $mid = floor(($low + $high) / 2);
@@ -23,5 +20,7 @@ function binarySearch($haystack,$needle): int
 
     return false;
 }
+
+$sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 echo binarySearch($sortedArray,9);
